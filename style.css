@@ -88,3 +88,15 @@ h1{
     font-size: 20px;
     margin-top: 2px;
 }
+
+
+.current-weather{
+    display: none;
+}
+
+.error-input{
+    text-align: left;
+    margin: 10px;
+    color: red;
+    display: none;
+}
