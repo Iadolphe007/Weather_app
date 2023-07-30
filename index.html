@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>weather app</title>
 </head>
 <body>
@@ -11,27 +12,27 @@
     <div class="container">
         <div class="weather-input">
             <div class="search">
-                <input type="text" placeholder="enter city here" spellcheck="false">
+                <input type="text" placeholder="enter city here" spellcheck="false" class="search-input">
                 <button class="search-btn"><img src="image/search.png" alt="search"></button>
             </div>
         </div>
         <div class="current-weather">
             <img src="image/rain.png" alt="rain icon" class="rain-icon">
-            <h2>Kigali</h2>
-            <h4>20°C</h4>
+            <h2 id="location">City</h2>
+            <h4 id="temperature">0°C</h4>
             <div class="weather-details">
                 <div class="bottom-left">
                     <img src="image/humidity.png" alt="humidity image">
                     <div>
-                        <h4 class="humidity">50%</h4>
-                        <h4>Humidity</h4>
+                        <h4 class="humidity">0%</h4>
+                        <h4>Precip</h4>
                     </div>
                 </div>
                 <div class="bottom-right">
                     <img src="image/wind.png" alt="">
                     <div>
-                        <h4 class="wind">10 km/h</h4>
-                        <h4>wind</h4>
+                        <h4 class="wind">0 kmph</h4>
+                        <h4>wind Speed</h4>
                     </div>
                 </div>
             </div>
