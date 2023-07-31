@@ -11,7 +11,7 @@ h1{
 .container{
     background: linear-gradient(#adddf6, #b7bcf5);
     padding: 40px 35px;
-    width: 30%;
+    width: 40%;
     text-align: center;
     margin: 100px auto 0;
     border-radius: 15px;
@@ -53,25 +53,25 @@ h1{
     width: 160px;
     margin-top: 40px;
 }
-.current-weather h2{
-    font-weight: bold;
-    font-size: 50px;
-}
 .current-weather h4{
     font-weight: bold;
-    font-size: 35px;
+    font-size: 40px;
+}
+.current-weather h3{
+    font-weight: bold;
+    font-size: 45px;
 
 }
 .bottom-left h4{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 .bottom-right h4{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 .bottom-right img{
-    width: 50px;
+    width: 40px;
 }
 .bottom-left img{
     width: 50px;
@@ -85,18 +85,18 @@ h1{
 }
 
 .wind, .humidity{
-    font-size: 20px;
+    font-size: 10px;
     margin-top: 2px;
 }
 
 
 .current-weather{
     display: none;
-}
+} 
 
-.error-input{
+/* .error-input{
     text-align: left;
     margin: 10px;
     color: red;
     display: none;
-}
+} */
