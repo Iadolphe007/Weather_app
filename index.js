@@ -1,3 +1,4 @@
+
 const api_key = '3188dfc0bf210fa37d56de756b126b8c'
 const api_url = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q='
 
@@ -13,6 +14,10 @@ async function check_weather(city){
     if(response.status == 404){
         document.querySelector('.current-weather').style.dsiplay = 'none'
         alert('invalid city name/ check your spelling')
+        search_input.value=" "
+    }
+    else if(search_input.value === ''){
+        alert('provide city/state')
     }
     else{
         let data = await response.json()
@@ -32,7 +37,7 @@ async function check_weather(city){
         } else if(data.weather[0].main == 'Mist'){
             weather_icon.src = 'image/mist.png'
         }
-        document.querySelector('.current-weather').style.display = 'block'
+        // document.querySelector('.current-weather').style.display = 'block'
     }
 }
 
